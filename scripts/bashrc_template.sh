@@ -130,3 +130,7 @@ export LD_LIBRARY_PATH=$LAL_LIB_RELEASE:$LAL_LIB_DEBUG:$PYLAL_LIB_RELEASE:$PYLAL
 export PATH=$INCLUDE_LAL_DIR:$PATH
 
 export PYTHONPATH=$PYLAL_LIB:$PYTHONPATH
+
+if [ -d .lal/bin ]; then
+	source .lal/bin/activate
+fi
