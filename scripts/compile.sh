@@ -1,11 +1,12 @@
 #!/bin/bash
 
-cd src
-
 # ----------------------------------------------------------------------
 # Compile linear-arrangement-library
 # ----------------------------------------------------------------------
-cd linear-arrangement-library
+echo "Compiling LAL"
+cd /workspace/src/linear-arrangement-library
+
+./make_docs.sh
 
 mkdir lal-release
 cd lal-release
@@ -24,9 +25,11 @@ cd ..
 # ----------------------------------------------------------------------
 # Compile python-interface
 # ----------------------------------------------------------------------
-cd python-interface
+echo "Compiling python interface"
+cd /workspace/src/python-interface
 
-touch modules/documentation.i
-./python_compile.sh
+./make_docs.sh
+/workspace/scripts/python_compile.sh
 
 cd ..
+
