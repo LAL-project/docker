@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  lal-build:
+    build: .
+    container_name: lal
+    volumes:
+      - ./src/linear-arrangement-library:/workspace/src/linear-arrangement-library
+      - ./src/python-interface:/workspace/src/python-interface
+      - ./scripts/bashrc_template.sh:/workspace/scripts/bashrc_template.sh
+      - ./scripts/compile.sh:/workspace/scripts/compile.sh
+      - ./scripts/python_compile.sh:/workspace/src/python-interface/python_compile.sh
+    working_dir: /workspace
