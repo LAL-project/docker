@@ -34,7 +34,7 @@ done
 cd ..
 
 echo "Building docker..."
-docker compose up --build
+docker compose up --build -d
 
 echo "Execute the container"
-docker compose run --rm lal-build bash
+docker compose exec lal-build bash
