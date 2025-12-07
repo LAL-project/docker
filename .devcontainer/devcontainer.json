@@ -1,0 +1,24 @@
+{
+  "name": "lal-devcontainer",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "lal-build",
+  "workspaceFolder": "/workspace",
+
+  "runServices": ["lal-build"],
+  "shutdownAction": "stopCompose",
+
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-python.vscode-pylance"
+  ],
+
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/bin/python3.12",
+    "jupyter.jupyterServerType": "local"
+  },
+
+  "forwardPorts": [8888],
+
+  "remoteUser": "root"
+}
