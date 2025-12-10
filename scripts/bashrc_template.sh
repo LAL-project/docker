@@ -122,7 +122,7 @@ LAL_LIB_DEBUG=/workspace/src/linear-arrangement-library/lal-debug
 
 INCLUDE_LAL_DIR=/workspace/src/linear-arrangement-library/
 
-PYLAL_LIB=/workspace/src/python-interface/linux/64
+PYLAL_LIB=/workspace/src/linear-arrangement-library/python-interface/linux/64
 
 # environment variables
 export LD_LIBRARY_PATH=$LAL_LIB_RELEASE:$LAL_LIB_DEBUG:$PYLAL_LIB_RELEASE:$PYLAL_LIB_DEBUG:$LD_LIBRARY_PATH

@@ -58,10 +58,9 @@ cd ..
 # Compile python-interface
 # ----------------------------------------------------------------------
 echo "Compiling python interface"
-cd python-interface
+cd /workspace/src/linear-arrangement-library/python-interface
 
 make BUILD=release
 make BUILD=debug
 
 cd ..
-

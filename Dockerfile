@@ -27,6 +27,7 @@ RUN \
 		yacc \
 	&& \
 	add-apt-repository ppa:deadsnakes/ppa -y && \
+	apt update && \
 	apt install -y \
 		python3.8 \
 		python3.8-dev \
