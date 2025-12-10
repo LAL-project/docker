@@ -1,13 +1,12 @@
 #!/bin/bash
 
-version=
+version=21.07
 
 mkdir -p src
 
 cd src
 for repo in \
 	linear-arrangement-library	\
-	python-interface			\
 	;
 do
 	

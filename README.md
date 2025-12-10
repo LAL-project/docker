@@ -32,7 +32,12 @@ The script will log you into the instance. There you will have to run the comman
 
 ### Manual build of the instance
 
-To build the instance you have to download the `linear-arrangement-library` repository and the `python-interface` repository. Then run the commands
+To build the instance you have to download the `linear-arrangement-library` repository and the `python-interface` repository. After that, select the version of the library you want to work with by running
+
+	$ git fetch origin 21.07
+	$ git checkout 21.07
+
+Then run the commands
 
 	$ docker compose up -d --build
 	$ docker compose exec lal-build bash
