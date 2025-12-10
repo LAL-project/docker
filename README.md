@@ -26,24 +26,13 @@ The easiest way to build the instance is running the `launch` script. To install
 
 	$ ./scripts/launch.sh
 
-To install older, more stable versions of LAL run one of:
-
-	$ ./scripts/launch.sh 24.10
-	$ ./scripts/launch.sh 23.01
-	$ ./scripts/launch.sh 21.07
-
 The script will log you into the instance. There you will have to run the command
 
 	# ./scripts/configure.sh
 
 ### Manual build of the instance
 
-To build the instance you have to download the `linear-arrangement-library` repository and the `python-interface` repository. After that, select the version of the library you want to work with by running
-
-	$ git fetch origin $v
-	$ git checkout $v
-
-where `$v` denotes the version, one of `24.10`, `23.01`, `21.07`. Then run the commands
+To build the instance you have to download the `linear-arrangement-library` repository and the `python-interface` repository. Then run the commands
 
 	$ docker compose up -d --build
 	$ docker compose exec lal-build bash
