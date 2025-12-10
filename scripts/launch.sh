@@ -1,9 +1,6 @@
 #!/bin/bash
 
-version=$1
-if [ ! -z $version ]; then
-	echo "Pulling version '$version'..."
-fi
+version=24.10
 
 mkdir -p src
 
@@ -18,11 +15,13 @@ do
 	if [ ! -d $repo ]; then
 		echo "    Pulling repository for the first time..."
 		git clone -q https://github.com/LAL-project/$repo
-		echo "    Fetching version '$version'..."
-		cd $repo
-		git fetch -q origin $1
-		git checkout -q $1
-		cd ..
+		if [ ! -z $version ]; then
+			echo "    Fetching version '$version'..."
+			cd $repo
+			git fetch -q origin $version
+			git checkout -q $version
+			cd ..
+		fi
 	else
 		echo "    Updating..."
 		cd $repo
