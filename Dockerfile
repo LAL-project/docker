@@ -21,7 +21,6 @@ RUN \
 		ghostscript \
 		doxygen \
 		locales \
-		libpcre2 \
 		libpcre2-dev \
 		libpcre3 \
 		libpcre3-dev \
