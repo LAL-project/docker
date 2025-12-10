@@ -1,5 +1,13 @@
 # A Docker container for LAL
 
+This repository contains instructions on how to build a docker instance for the [Linear Arrangement Library](https://github.com/LAL-project/linear-arrangement-library). There are specific instructions for each version, each located in its own branch of this repository. To access the each version's specific instructions, issue the following commands
+
+	$ git clone https://github.com/LAL-project/docker
+	$ git fetch origin $v
+	$ git checkout $v
+
+where `$v` is the specific version of the library.
+
 ## Building the container
 
 First, you have to build the Docker container.
