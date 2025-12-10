@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "    Downloading and installing SWIG 4.0.1"
+
+wget https://github.com/swig/swig/archive/refs/tags/v4.0.1.tar.gz
+tar xf v4.0.1.tar.gz
+cd swig-4.0.1
+./autogen.sh
+./configure
+make -j4
+make install
