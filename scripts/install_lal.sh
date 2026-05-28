@@ -42,13 +42,13 @@ cd /workspace/src/linear-arrangement-library
 
 mkdir lal-release
 cd lal-release
-cmake ../lal -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j4
 cd ..
 
 mkdir lal-debug
 cd lal-debug
-cmake ../lal -DCMAKE_BUILD_TYPE=Debug
+cmake .. -DCMAKE_BUILD_TYPE=Debug
 make -j4
 cd ..
 
